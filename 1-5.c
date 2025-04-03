@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-
+int main()
+{
   printf("------------------------\n");
   printf("| Fahrenheit | Celsius |\n");
   printf("------------------------\n");
