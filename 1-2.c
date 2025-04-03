@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -8,4 +9,6 @@ int main()
   printf("\"");
   printf("\\");
   // printf("\x"); // warning: unknown escape sequence
+
+  return EXIT_SUCCESS;
 }

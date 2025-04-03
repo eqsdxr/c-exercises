@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -19,4 +20,6 @@ int main()
     printf("       %3.0f       %6.1f\n", celsius, fahr);
     celsius = celsius + step;
   }
+
+  return EXIT_SUCCESS;
 }
