@@ -8,8 +8,7 @@ int trim_left(char s[], int len);
 int trim_right(char s[], int len);
 int getln(char s[], int lim);
 
-int main()
-{
+int main() {
   char line[MAXLINE];
   int len;
   int start;
@@ -36,18 +35,17 @@ int trim_left(char s[], int len) {
 int trim_right(char s[], int len) {
   for (int i = len - 2; i > 0; --i)
     if (s[i] != ' ' && s[i] != '\t') {
-      return i+1;
-  }
+      return i + 1;
+    }
   return len;
 }
 
-int getln(char s[], int lim)
-{
+int getln(char s[], int lim) {
   long int i;
   int c;
 
-  for (i=0; i < lim-1 && (c = getchar()) != EOF && c != '\n'; ++i)
-      s[i] = c;
+  for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
+    s[i] = c;
   if (c == '\n') {
     s[i] = c;
     ++i;

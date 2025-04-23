@@ -6,8 +6,7 @@
 int getln(char line[], int maxline);
 void copy(char to[], char from[]);
 
-int main()
-{
+int main() {
   long int length;
   int next_length;
   long int max;
@@ -35,12 +34,11 @@ int main()
   return EXIT_SUCCESS;
 }
 
-int getln(char s[], int lim)
-{
+int getln(char s[], int lim) {
   long int i;
   int c;
 
-  for (i=0; i < lim-1 && (c = getchar()) != EOF && c != '\n'; ++i)
+  for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
     s[i] = c;
   if (c == '\n') {
     s[i] = c;
@@ -50,8 +48,7 @@ int getln(char s[], int lim)
   return i;
 }
 
-void copy(char to[], char from[])
-{
+void copy(char to[], char from[]) {
   int i;
 
   i = 0;

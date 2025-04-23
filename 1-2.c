@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
   printf("\n");
   printf("\t");
   printf("\b");

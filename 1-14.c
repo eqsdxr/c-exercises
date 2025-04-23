@@ -3,8 +3,7 @@
 
 #define AMOUNT_OF_SYMBOLS 127
 
-int main()
-{
+int main() {
   int chars[AMOUNT_OF_SYMBOLS];
 
   int c;
@@ -38,4 +37,3 @@ int main()
 
   return EXIT_SUCCESS;
 }
-

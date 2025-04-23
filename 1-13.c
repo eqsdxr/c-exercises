@@ -5,8 +5,7 @@
 #define IN 1
 #define OUT 0
 
-int main()
-{
+int main() {
   int lengths[MAX_WORDS];
 
   for (int i = 0; i < MAX_WORDS; ++i)
@@ -59,4 +58,3 @@ int main()
   }
   return EXIT_SUCCESS;
 }
-

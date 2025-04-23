@@ -6,8 +6,7 @@
 int getln(char s[], int lim);
 void reverse(char s[], int lim);
 
-int main()
-{
+int main() {
   char line[MAXLINE];
   int len;
 
@@ -20,13 +19,12 @@ int main()
   return EXIT_SUCCESS;
 }
 
-int getln(char s[], int lim)
-{
+int getln(char s[], int lim) {
   long int i;
   int c;
 
-  for (i=0; i < lim-1 && (c = getchar()) != EOF && c != '\n'; ++i)
-      s[i] = c;
+  for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
+    s[i] = c;
   if (c == '\n') {
     s[i] = c;
     ++i;
@@ -35,8 +33,7 @@ int getln(char s[], int lim)
   return i;
 }
 
-void reverse(char s[], int len)
-{
+void reverse(char s[], int len) {
   int temp;
   int i = 0;
   int j = len - 1; // Prevent \0 from reversing

@@ -3,8 +3,7 @@
 
 int ftoc(int f);
 
-int main()
-{
+int main() {
   float fahr, celsius;
   float lower, upper, step;
 
@@ -23,11 +22,7 @@ int main()
     fahr = fahr + step;
   }
 
-
   return EXIT_SUCCESS;
 }
 
-int ftoc(int f)
-{
-  return (5.0/9.0) * (f-32.0);
-}
+int ftoc(int f) { return (5.0 / 9.0) * (f - 32.0); }
