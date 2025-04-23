@@ -27,10 +27,12 @@ void detab(char input[], char output[]) {
   for (i = j = 0; input[i] != '\0'; ++i)
     if (input[i] == '\t') {
 
+      // https://stackoverflow.com/a/67278982
       nblanks = TAB_SIZE - (j % TAB_SIZE);
 
       while (--nblanks > 0)
         output[++j] = ' ';
+
     } else
       output[++j] = input[i];
 
